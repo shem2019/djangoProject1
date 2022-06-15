@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dolores itaque iusto, reiciendis sequi tempore?
+    Atque aut autem, dolorem eius error fugit, illum inventore ipsa ipsum iusto libero, provident ratione.
+</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, est facilis illum ipsa laborum molestiae neque
+    non nulla pariatur perferendis provident quae, quia quod rem rerum sapiente soluta veniam? Eveniet !
+</p>
+    {% for question in questions %}
+        {% include 'snippets/body_snippet.html' with value=question %}<br>
+    {% endfor %}
+
+
+
+</div>
+{% endblock content %}
